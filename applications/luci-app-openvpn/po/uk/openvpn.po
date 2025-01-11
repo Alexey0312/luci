@@ -13,56 +13,56 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.4-dev\n"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:368
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:372
 msgid "'net30', 'p2p', or 'subnet'"
 msgstr "'net30', 'p2p', або 'subnet'"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:485
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:493
 msgid "Accept options pushed from server"
 msgstr "Прийміть варіанти, висунуті з сервера"
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:92
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:90
 msgid "Add"
 msgstr "Додати"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:229
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:233
 msgid "Add route after establishing connection"
 msgstr "Додати маршрут після встановлення з'єднання"
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:92
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:90
 msgid "Add template based configuration"
 msgstr "Додати конфігурацію на основі шаблону"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:752
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:755
 msgid "Additional authentication over TLS"
 msgstr "Додаткова аутентифікація через TLS"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:421
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:429
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:57
 msgid "Allow client-to-client traffic"
 msgstr "Дозволити обмін трафіком між клієнтами"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:426
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:434
 msgid "Allow multiple clients with same certificate"
 msgstr "Дозволити декілька клієнтів з однаковим сертифікатом"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:744
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:747
 msgid "Allow only one session"
 msgstr "Дозволити лише одну сесію"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:193
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:197
 msgid "Allow remote to change its IP or port"
 msgstr "Дозволити віддалене зміну IP-адреси або порту"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:461
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:469
 msgid "Allowed maximum of connected clients"
 msgstr "Дозволити максимум підключених клієнтів"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:466
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:474
 msgid "Allowed maximum of internal"
 msgstr "Дозволено максимальна к-ть внутрішніх маршрутів"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:471
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:479
 msgid "Allowed maximum of new connections"
 msgstr "Дозволити максимум нових з'єднання"
 
@@ -70,11 +70,11 @@ msgstr "Дозволити максимум нових з'єднання"
 msgid "Append log to file"
 msgstr "Додати log у файл"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:490
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:498
 msgid "Authenticate using username/password"
 msgstr "Аутентифікувати використовуючи username/password"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:560
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:563
 msgid "Automatically redirect default route"
 msgstr "Автоматично перенаправити по маршруту за замовчуванням"
 
@@ -87,7 +87,7 @@ msgstr ""
 msgid "Call down cmd/script before TUN/TAP close"
 msgstr "Викликати команду/скрипт перед закриттям TUN/TAP"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:662
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:665
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:77
 msgid "Certificate authority"
 msgstr "Сертифікаційний орган"
@@ -101,7 +101,7 @@ msgstr "Змінити пріоритет процесу"
 msgid "Change to directory before initialization"
 msgstr "Перейти до каталогу перед ініціалізацією"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:784
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:787
 msgid "Check peer certificate against a CRL"
 msgstr "Перевірити peer-сертифікат у CRL"
 
@@ -109,7 +109,7 @@ msgstr "Перевірити peer-сертифікат у CRL"
 msgid "Chroot to directory after initialization"
 msgstr "Chroot до каталогу після ініціалізації"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:396
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:404
 msgid "Client is disabled"
 msgstr "Клієнт відключений"
 
@@ -117,38 +117,38 @@ msgstr "Клієнт відключений"
 msgid "Configuration category"
 msgstr "Категорія конфігурації"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:481
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:489
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:53
 msgid "Configure client mode"
 msgstr "Налаштування режиму клієнта"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:381
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:389
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:37
 msgid "Configure server bridge"
 msgstr "Налаштування server bridge"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:376
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:384
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:33
 msgid "Configure server mode"
 msgstr "Налаштування режиму сервера"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:544
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:547
 msgid "Connect through Socks5 proxy"
 msgstr "Підключення через Socks5 проксі"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:524
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:527
 msgid "Connect to remote host through an HTTP proxy"
 msgstr "Підключиння до віддаленого хоста через HTTP-проксі"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:519
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:522
 msgid "Connection retry interval"
 msgstr "Інтервал повторного підключення"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:568
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:571
 msgid "Cryptography"
 msgstr "Криптографія"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:237
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:241
 msgid "Delay n seconds after connection"
 msgstr "Затримка на n секунд після з'єднання"
 
@@ -156,14 +156,18 @@ msgstr "Затримка на n секунд після з'єднання"
 msgid "Delay tun/tap open and up script execution"
 msgstr "Затримка tun/tap на відкриття та виконання сценарію"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:666
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:669
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:81
 msgid "Diffie-Hellman parameters"
 msgstr "Diffie-Hellman параметри"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:431
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:439
 msgid "Directory for custom client config files"
 msgstr "Каталог для конфігураційних файлів клієнта"
+
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:377
+msgid "Disable Data Channel Offloading (DCO) support"
+msgstr ""
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:24
 msgid "Disable Paging"
@@ -173,28 +177,28 @@ msgstr "Вимкнути Paging"
 msgid "Disable options consistency check"
 msgstr "Вимкнути перевірку послідовності параметрів"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:197
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:201
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:41
 msgid "Do not bind to local address and port"
 msgstr "Не прив'язуйте до local-адреси та порту"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:221
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:225
 msgid "Don't actually execute ifconfig"
 msgstr "Насправді не виконувати ifconfig"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:241
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:245
 msgid "Don't add routes automatically"
 msgstr "Не додавати маршрути автоматично"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:768
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:771
 msgid "Don't cache --askpass or --auth-user-pass passwords"
 msgstr "Не кешувати --askpass або --auth-user-pass паролі"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:249
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:253
 msgid "Don't drop incoming tun packets with same destination as host"
 msgstr "Не блокувати вхідні tun-пакети з тим же призначенням як host"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:391
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:399
 msgid "Don't inherit global push options"
 msgstr "Не успадковувати глобальні push-опції"
 
@@ -202,19 +206,19 @@ msgstr "Не успадковувати глобальні push-опції"
 msgid "Don't log timestamps"
 msgstr "Не зберігати timestamps"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:245
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:249
 msgid "Don't pull routes automatically"
 msgstr "Не прокладати маршрути автоматично"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:336
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:340
 msgid "Don't re-read key on restart"
 msgstr "Не перечитувати ключ при перезапуску"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:265
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:269
 msgid "Don't use adaptive lzo compression"
 msgstr "Не використовувати адаптивне lzo стиснення"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:225
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:229
 msgid "Don't warn on ifconfig inconsistencies"
 msgstr "Не попереджати про невідповідності у ifconfig"
 
@@ -222,37 +226,37 @@ msgstr "Не попереджати про невідповідності у ifc
 msgid "Echo parameters to log"
 msgstr "Echo параметри у log"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:257
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:261
 msgid "Empirically measure MTU"
 msgstr "Емпірично вимірювати MTU"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:636
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:639
 msgid "Enable OpenSSL hardware crypto engines"
 msgstr "Увімкнути апартну підтримку кодування OpenSSL"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:253
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:257
 msgid "Enable Path MTU discovery"
 msgstr "Увімкнути Path MTU"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:572
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:575
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:65
 msgid "Enable Static Key encryption mode (non-TLS)"
 msgstr "Увімкнути режим шифрування Статичного Ключа (не TLS)"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:657
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:682
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:660
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:685
 msgid "Enable TLS and assume client role"
 msgstr "Увімкнути TLS та удавати себе клієнтом"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:652
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:655
 msgid "Enable TLS and assume server role"
 msgstr "Увімкнути TLS та удавати себе сервером"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:282
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:286
 msgid "Enable internal datagram fragmentation"
 msgstr "Увімкнути внутрішню фрагментацію datagram"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:349
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:353
 msgid "Enable management interface on <em>IP</em> <em>port</em>"
 msgstr "Увімкнути інтерфейс управління на <em>IP</em> <em>порту</em>"
 
@@ -260,18 +264,18 @@ msgstr "Увімкнути інтерфейс управління на <em>IP</
 msgid "Enabled"
 msgstr "Увімкнено"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:756
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:759
 msgid "Encrypt and authenticate all control channel packets with the key"
 msgstr "Шифрувати та аутентифікувати ключем всі пакети каналу управління"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:760
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:763
 msgid ""
 "Encrypt and authenticate all control channel packets with the key, version 2."
 msgstr ""
 "Шифрувати та аутентифікувати всі пакети каналу управління за допомогою "
 "ключа, версія 2."
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:626
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:629
 msgid "Encryption cipher for packets"
 msgstr "Шифр шифрування пакетів"
 
@@ -299,7 +303,7 @@ msgstr ""
 "Виконується в режимі сервера при додаванні IPv4 адреси/маршруту або MAC-"
 "адреси до внутрішньої таблиці маршрутизації OpenVPN"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:748
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:751
 msgid "Exit on TLS negotiation failure"
 msgstr "Вихід у разі помилки узгодження TLS"
 
@@ -307,15 +311,15 @@ msgstr "Вихід у разі помилки узгодження TLS"
 msgid "Grant access to OpenVPN configuration"
 msgstr "Надати доступ до конфігурування OpenVPN"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:577
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:580
 msgid "HMAC authentication for packets"
 msgstr "HMAC-аутентифікація для пакетів"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:495
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:503
 msgid "Handling of authentication failures"
 msgstr "Обробка помилок автентифікації"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:312
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:316
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:49
 msgid ""
 "Helper directive to simplify the expression of --ping and --ping-restart in "
@@ -324,7 +328,7 @@ msgstr ""
 "Допоміжна директива для спрощення виразу --ping і --ping-restart у "
 "конфігураціях режиму сервера"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:555
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:558
 msgid "If hostname resolve fails, retry"
 msgstr "Якщо розпізнати ім’я хоста не вдається, повторіть спробу"
 
@@ -332,24 +336,24 @@ msgstr "Якщо розпізнати ім’я хоста не вдається
 msgid "Instance \"%s\""
 msgstr "Екземпляр \"%s\""
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:18
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:46
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:17
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:45
 msgid "Instance with that name already exists!"
 msgstr "Екземпляр з такою назвою вже існує!"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:340
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:344
 msgid "Keep local IP address on restart"
 msgstr "Збереження локальної IP-адреси при перезавантаженні"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:344
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:348
 msgid "Keep remote IP address on restart"
 msgstr "Збереження віддаленої IP-адреси при перезавантаженні"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:332
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:336
 msgid "Keep tun/tap device open on restart"
 msgstr "Тримати пристрій tun/tap відкритим при перезавантаженні"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:740
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:743
 msgid "Key transition window"
 msgstr "Вікно передачі ключа"
 
@@ -357,7 +361,7 @@ msgstr "Вікно передачі ключа"
 msgid "Limit repeated log messages"
 msgstr "Обмежити повторювані повідомлення журналу"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:670
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:673
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:85
 msgid "Local certificate"
 msgstr "Локальний сертифікат"
@@ -366,7 +370,7 @@ msgstr "Локальний сертифікат"
 msgid "Local host name or IP address"
 msgstr "Локальне ім'я хоста або IP-адреса"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:674
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:677
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:89
 msgid "Local private key"
 msgstr "Локальний приватний ключ"
@@ -375,7 +379,7 @@ msgstr "Локальний приватний ключ"
 msgid "Major mode"
 msgstr "Основний режим"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:456
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:464
 msgid "Maximum number of queued TCP output packets"
 msgstr "Максимальна кількість вихідних пакетів TCP у черзі"
 
@@ -383,23 +387,23 @@ msgstr "Максимальна кількість вихідних пакеті�
 msgid "Networking"
 msgstr "Мережа"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:451
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:459
 msgid "Number of allocated broadcast buffers"
 msgstr "Кількість виділених широкомовних буферів"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:364
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:368
 msgid "Number of lines for log file history"
 msgstr "Кількість рядків для історії журналу"
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:95
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:93
 msgid "OVPN configuration file upload"
 msgstr "Завантаження файлу конфігурації OVPN"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:772
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:775
 msgid "Only accept connections from given X509 name"
 msgstr "Приймати з’єднання лише від вказаного X509 імені"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:328
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:332
 msgid "Only process ping timeouts if routes exist"
 msgstr "Обробляти тайм-аути ping лише за наявності маршрутів"
 
@@ -420,7 +424,7 @@ msgstr "Оптимізація записів TUN/TAP/UDP"
 msgid "Overview"
 msgstr "Огляд"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:678
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:681
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:73
 msgid "PKCS#12 file containing keys"
 msgstr "Файл PKCS#12, що містить ключі"
@@ -429,27 +433,27 @@ msgstr "Файл PKCS#12, що містить ключі"
 msgid "Pass environment variables to script"
 msgstr "Передача змінних середовища до скрипту"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:648
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:651
 msgid "Persist replay-protection state"
 msgstr "Зберігати стан захисту від повторного відтворення"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:406
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:414
 msgid "Persist/unpersist ifconfig-pool"
 msgstr "Зберігати/не зберігати ifconfig-pool"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:316
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:320
 msgid "Ping remote every n seconds over TCP/UDP port"
 msgstr "Ping кожні n секунд через TCP/UDP порт"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:32
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:24
 msgid "Please edit this file directly in a terminal session."
 msgstr "Будь ласка, редагуйте цей файл безпосередньо в терміналі."
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:51
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:50
 msgid "Please select a valid OVPN config file to upload!"
 msgstr "Будь ласка, оберіть дійсний файл конфігурації OVPN для завантаження!"
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:23
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:22
 msgid "Please select a valid VPN template!"
 msgstr "Будь ласка, оберіть дійсний шаблон VPN!"
 
@@ -465,27 +469,27 @@ msgstr "Порт"
 msgid "Protocol"
 msgstr "Протокол"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:534
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:537
 msgid "Proxy timeout in seconds"
 msgstr "Тайм-аут проксі в секундах"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:411
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:419
 msgid "Push an ifconfig option to remote"
 msgstr "Надішліть опцію ifconfig на віддалений вузол"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:386
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:394
 msgid "Push options to peer"
 msgstr "Надіслати параметри до вузла"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:354
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:358
 msgid "Query management channel for private key"
 msgstr "Канал керування запитами для приватного ключа"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:509
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:517
 msgid "Randomly choose remote server"
 msgstr "Випадковий вибір віддаленого сервера"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:436
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:444
 msgid "Refuse connection if no custom client config"
 msgstr "Відмовити в підключенні, якщо немає спеціальної конфігурації клієнта"
 
@@ -493,62 +497,62 @@ msgstr "Відмовити в підключенні, якщо немає спе
 msgid "Remap SIGUSR1 signals"
 msgstr "Перепризначити сигнали SIGUSR1"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:505
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:513
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:61
 msgid "Remote host name or IP address"
 msgstr "Ім'я або IP-адреса віддаленого хоста"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:320
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:324
 msgid "Remote ping timeout"
 msgstr "Час очікування ping віддаленого вузла"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:724
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:727
 msgid "Renegotiate data chan. key after bytes"
 msgstr "Повторно узгодити ключ каналу даних після отримання/відправлення даних"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:728
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:731
 msgid "Renegotiate data chan. key after packets"
 msgstr ""
 "Повторно узгодити ключ каналу даних після отримання/відправлення пакетів"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:732
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:735
 msgid "Renegotiate data chan. key after seconds"
 msgstr "Повторно узгодити ключ каналу даних через n секунд"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:640
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:643
 msgid "Replay protection sliding window size"
 msgstr "Захист від повторного відтворення - розмір плаваючого вікна"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:776
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:779
 msgid "Require explicit designation on certificate"
 msgstr "Вимагати чіткого зазначення на сертифікаті"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:780
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:783
 msgid "Require explicit key usage on certificate"
 msgstr "Вимагати явного використання ключа в сертифікаті"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:324
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:328
 msgid "Restart after remote ping timeout"
 msgstr "Перезапустити після тайм-ауту ping віддаленого вузла"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:804
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:808
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:810
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:819
 msgid "Restrict the allowed ciphers to be negotiated"
 msgstr "Обмежте дозволені шифри для узгодження"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:720
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:723
 msgid "Retransmit timeout on TLS control channel"
 msgstr "Таймаут повторної передачі по каналу управління TLS"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:529
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:532
 msgid "Retry indefinitely on HTTP proxy errors"
 msgstr "Повторювати нескінченно при помилках HTTP проксі"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:550
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:553
 msgid "Retry indefinitely on Socks proxy errors"
 msgstr "Повторювати нескінченно при помилках Socks проксі"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:416
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:424
 msgid "Route subnet to client"
 msgstr "Направити підмережу до клієнта"
 
@@ -564,22 +568,22 @@ msgstr "Запуск скрипта при відключенні клієнта
 msgid "Run up/down scripts for all restarts"
 msgstr "Запуск up/down скриптів для всіх перезапусків"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:41
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:33
 msgid "Save"
 msgstr "Зберегти"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:65
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:57
 msgid ""
 "Section to add an optional 'auth-user-pass' file with your credentials (%s)"
 msgstr ""
 "Розділ для додавання необов'язкового файлу 'auth-user-pass' з вашими "
 "обліковими даними (%s)"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:44
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:36
 msgid "Section to modify the OVPN config file (%s)"
 msgstr "Розділ для зміни конфігураційного файлу OVPN (%s)"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:261
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:265
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:45
 msgid ""
 "Security recommendation: It is recommended to not enable compression and set "
@@ -596,11 +600,11 @@ msgstr ""
 "Рекомендація з безпеки: Рекомендується не включати стиснення і встановити "
 "цей параметр в значення `stub-v2`"
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:85
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:83
 msgid "Select template ..."
 msgstr "Виберіть шаблон ..."
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:500
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:508
 msgid "Send notification to peer on disconnect"
 msgstr "Надсилати сповіщення вузлу при відключенні"
 
@@ -608,15 +612,15 @@ msgstr "Надсилати сповіщення вузлу при відключ
 msgid "Service"
 msgstr "Служба"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:270
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:274
 msgid "Set TCP/UDP MTU"
 msgstr "Встановити TCP/UDP MTU"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:401
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:409
 msgid "Set aside a pool of subnets"
 msgstr "Виділіть пул підмереж"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:539
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:542
 msgid "Set extended HTTP proxy options"
 msgstr "Встановіть розширені параметри HTTP проксі"
 
@@ -625,40 +629,40 @@ msgstr "Встановіть розширені параметри HTTP прок
 msgid "Set output verbosity"
 msgstr "Встановіть деталізацію виводу"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:446
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:454
 msgid "Set size of real and virtual address hash tables"
 msgstr "Задайте розмір хеш-таблиць реальних і віртуальних адрес"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:296
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:300
 msgid "Set the TCP/UDP receive buffer size"
 msgstr "Встановіть розмір буфера отримання TCP/UDP"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:292
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:296
 msgid "Set the TCP/UDP send buffer size"
 msgstr "Встановіть розмір буфера надсилання TCP/UDP"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:300
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:304
 msgid "Set tun/tap TX queue length"
 msgstr "Встановіть довжину черги передачі tun/tap"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:217
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:221
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:29
 msgid "Set tun/tap adapter parameters"
 msgstr "Встановіть параметри адаптера tun/tap"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:274
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:278
 msgid "Set tun/tap device MTU"
 msgstr "Встановіть MTU tun/tap пристрою"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:278
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:282
 msgid "Set tun/tap device overhead"
 msgstr "Встановіть накладні витрати tun/tap пристрою"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:287
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:291
 msgid "Set upper bound on TCP MSS"
 msgstr "Встановіть верхню межу для TCP MSS"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:304
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:308
 msgid "Shaping for peer bandwidth"
 msgstr "Формування пропускної здатності вузла"
 
@@ -676,23 +680,23 @@ msgstr ""
 msgid "Shell command to verify X509 name"
 msgstr "Команда оболонки для перевірки імені X509"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:644
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:647
 msgid "Silence the output of replay warnings"
 msgstr "Заглушити виведення попереджень про повторення"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:631
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:634
 msgid "Size of cipher key"
 msgstr "Розмір ключа шифру"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:233
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:237
 msgid "Specify a default gateway for routes"
 msgstr "Вказати шлюз за замовчуванням для маршрутів"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:565
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:568
 msgid "Specify whether the client is required to supply a valid certificate"
 msgstr "Вкажіть, чи зобов'язаний клієнт надати дійсний сертифікат"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:359
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:363
 msgid "Start OpenVPN in a hibernating state"
 msgstr "Запускати OpenVPN в сплячому режимі"
 
@@ -729,11 +733,11 @@ msgstr "Номер локального порту TCP/UDP (1194 за замов
 msgid "TCP/UDP port # for remote (default=1194)"
 msgstr "Номер віддаленого порту TCP/UDP (1194 за замовчуванням)"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:716
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:719
 msgid "TLS 1.3 or newer cipher"
 msgstr "Шифр TLS 1.3 або новіший"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:708
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:711
 msgid "TLS cipher"
 msgstr "Шифр TLS"
 
@@ -741,39 +745,33 @@ msgstr "Шифр TLS"
 msgid "TOS passthrough (applies to IPv4 only)"
 msgstr "Пропуск TOS (застосовується тільки для IPv4)"
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:78
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:76
 msgid "Template based configuration"
 msgstr "Конфігурація на основі шаблону"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:441
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:449
 msgid "Temporary directory for client-connect return file"
 msgstr "Тимчасовий каталог для файлу повернення 'client-connect'"
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:12
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:40
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:11
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:39
 msgid "The 'Name' field must not be empty!"
 msgstr "Поле \"Ім'я\" не повинно бути порожнім!"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:22
-msgid ""
-"The OVPN config file (%s) could not be found, please check your "
-"configuration."
-msgstr "Файл конфігурації OVPN (%s) не знайдено, перевірте ваші налаштування."
-
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:792
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:795
 msgid "The highest supported TLS version"
 msgstr "Найвища підтримувана версія TLS"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:796
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:799
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:69
 msgid "The key direction for 'tls-auth' and 'secret' options"
 msgstr "Задати ключ для параметрів 'tls-auth' і 'secret'"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:788
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:791
 msgid "The lowest supported TLS version"
 msgstr "Найнижча підтримувана версія TLS"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:31
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-file.lua:23
 msgid ""
 "The size of the OVPN config file (%s) is too large for online editing in "
 "LuCI (&ge; 100 KB)."
@@ -781,46 +779,46 @@ msgstr ""
 "Розмір файлу конфігурації OVPN (%s) занадто великий для онлайн-редагування в "
 "LuCI (&ge; 100 KB)."
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:800
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:803
 msgid "This completely disables cipher negotiation"
 msgstr "Це повністю вимикає узгодження шифру"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:736
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:739
 msgid "Timeframe for key exchange"
 msgstr "Часові рамки обміну ключами"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:209
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:213
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:25
 msgid "Type of used device"
 msgstr "Тип використовуваного пристрою"
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:104
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:102
 msgid "Upload"
 msgstr "Завантажити"
 
-#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:104
+#: applications/luci-app-openvpn/luasrc/view/openvpn/cbi-select-input-add.htm:102
 msgid "Upload ovpn file"
 msgstr "Завантажити файл OVPN"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:514
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:193
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:97
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-basic.lua:103
 msgid "Use protocol"
 msgstr "Використовувати протокол"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:213
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:217
 msgid "Use tun/tap device node"
 msgstr "Використовуйте вузол пристрою tun/tap"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:476
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:484
 msgid "Use username as common name"
 msgstr "Використовувати ім'я користувача як загальне ім'я"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:372
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:380
 msgid "VPN"
 msgstr "VPN"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:201
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:205
 msgid ""
 "When you have more than one IP address (e.g. multiple interfaces, or "
 "secondary IP addresses), and do not use --local to force binding to one "
@@ -840,17 +838,23 @@ msgstr "Запис стану у файл кожні n секунд"
 msgid "no"
 msgstr "Ні"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:205
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:209
 msgid "tun/tap device"
 msgstr "пристрій tun/tap"
 
-#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:308
+#: applications/luci-app-openvpn/luasrc/model/cbi/openvpn-advanced.lua:312
 msgid "tun/tap inactivity timeout"
 msgstr "тайм-аут бездіяльності tun/tap"
 
 #: applications/luci-app-openvpn/luasrc/model/cbi/openvpn.lua:111
 msgid "yes (%i)"
 msgstr "так (%i)"
+
+#~ msgid ""
+#~ "The OVPN config file (%s) could not be found, please check your "
+#~ "configuration."
+#~ msgstr ""
+#~ "Файл конфігурації OVPN (%s) не знайдено, перевірте ваші налаштування."
 
 #~ msgid "Enable a compression algorithm"
 #~ msgstr "Увімкнути алгоритм стиснення"
