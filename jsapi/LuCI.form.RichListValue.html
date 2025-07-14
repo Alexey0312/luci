@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: SectionValue</title>
+    <title>Class: RichListValue</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -3827,7 +3827,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="LuCI.form.SectionValue.html">Class: SectionValue</h1>
+        <h1 class="page-title" data-filename="LuCI.form.RichListValue.html">Class: RichListValue</h1>
         
 
 
@@ -3838,11 +3838,13 @@
     <h2>
         <span class="ancestors"><a href="LuCI.html">LuCI</a><a href="LuCI.form.html">.form</a>.</span>
     
-    SectionValue
+    RichListValue
     </h2>
     
-        <div class="class-description"><p>The <code>SectionValue</code> widget embeds a form section element within an option
-element container, allowing to nest form sections into other sections.</p></div>
+        <div class="class-description"><p>The <code>RichListValue</code> class implements a simple static HTML select element
+allowing the user to choose a single value from a set of predefined choices.
+Each choice may contain a tertiary, more elaborate description.
+It builds upon the <a href="LuCI.form.ListValue.html"><code>LuCI.form.ListValue</code></a> widget.</p></div>
     
 </header>  
 
@@ -3854,14 +3856,14 @@ element container, allowing to nest form sections into other sections.</p></div>
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="SectionValue">
+        <h4 class="name" id="RichListValue">
             
-            new LuCI.form.SectionValue<span class="signature">(form, section, option, subsection_class, <span class="optional">class_args</span>)</span>
+            new LuCI.form.RichListValue<span class="signature">(form, section, option, <span class="optional">title</span>, <span class="optional">description</span>)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line5013">line 5013</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line3993">line 3993</a>
         </div>
         
     </div>
@@ -3985,54 +3987,20 @@ option to the section.</p></td>
                         
                     
                 
-                <p>The internal name of the option element holding the section. Since a section
-container element does not read or write any configuration itself, the name
-is only used internally and does not need to relate to any underlying UCI
-option name.</p></td>
+                <p>The name of the UCI option to map.</p></td>
         </tr>
 	
 	
 	
         <tr>
             
-                <td class="name"><code>subsection_class</code></td>
+                <td class="name"><code>title</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type"><a href="LuCI.form.AbstractSection.html">LuCI.form.AbstractSection</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                    
-                    
-                        
-                    
-                
-                <p>The class to use for instantiating the nested section element. Note that
-the class value itself is expected here, not a class instance obtained by
-calling <code>new</code>. The given class argument must be a subclass of the
-<code>AbstractSection</code> class.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>class_args</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
+<span class="param-type">string</span>
 
 
             
@@ -4048,11 +4016,38 @@ calling <code>new</code>. The given class argument must be a subclass of the
                     
                         
                     
-                        <span class="repeatable">repeatable</span>
+                
+                <p>The title caption of the option element.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>description</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
                     
                 
-                <p>All further arguments are passed as-is to the subclass constructor. Refer
-to the corresponding class constructor documentations for details.</p></td>
+                <p>The description text of the option element.</p></td>
         </tr>
 	
 	
@@ -4106,7 +4101,7 @@ to the corresponding class constructor documentations for details.</p></td>
         <h3 class="subsection-title">Extends</h3>
         
         <ul>
-            <li><a href="LuCI.form.Value.html">LuCI.form.Value</a></li>
+            <li><a href="LuCI.form.ListValue.html">LuCI.form.ListValue</a></li>
         </ul>
     
     
@@ -4125,7 +4120,7 @@ to the corresponding class constructor documentations for details.</p></td>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="subsection"><span class="type-signature ">readonly</span>subsection<span class="type-signature type luci.form.abstractsection"><a href="LuCI.form.AbstractSection.html">LuCI.form.AbstractSection</a></span> </h4>
+        <h4 class="name" id="orientation">orientation<span class="type-signature type string">string</span> </h4>
     </div>
     
     
@@ -4133,8 +4128,9 @@ to the corresponding class constructor documentations for details.</p></td>
 <dd>
     
     <div class="description">
-        <p>Access the embedded section instance.</p>
-<p>This property holds a reference to the instantiated nested section.</p>
+        <p>Set the orientation of the underlying radio or checkbox elements.</p>
+<p>May be one of <code>horizontal</code> or <code>vertical</code>. Only applies to non-select
+widget types.</p>
     </div>
     
     
@@ -4154,6 +4150,108 @@ to the corresponding class constructor documentations for details.</p></td>
     
     
     
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>horizontal</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="size">size<span class="type-signature type number">number</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Set the size attribute of the underlying HTML select element.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>null</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="widget">widget<span class="type-signature type string">string</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Set the type of the underlying form controls.</p>
+<p>May be one of <code>select</code> or <code>radio</code>. If set to <code>select</code>, an HTML
+select element is rendered, otherwise a collection of <code>radio</code>
+elements is used.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>select</li></ul></dd>
     
     
     
@@ -4483,6 +4581,56 @@ or selected by the user.</p>
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="orientation">orientation<span class="type-signature type string">string</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Set the orientation of the underlying radio or checkbox elements.</p>
+<p>May be one of <code>horizontal</code> or <code>vertical</code>. Only applies to non-select
+widget types.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>horizontal</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="password">password<span class="type-signature type boolean">boolean</span> </h4>
     </div>
     
@@ -4733,6 +4881,54 @@ dependency constraints.</p>
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="size">size<span class="type-signature type number">number</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Set the size attribute of the underlying HTML select element.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>null</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="uciconfig">uciconfig<span class="type-signature type string">string</span> </h4>
     </div>
     
@@ -4923,6 +5119,57 @@ option element is marked as invalid.</p>
     
     <dt class="tag-default">Default Value:</dt>
     <dd class="tag-default"><ul class="dummy"><li>null</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="widget">widget<span class="type-signature type string">string</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Set the type of the underlying form controls.</p>
+<p>May be one of <code>select</code> or <code>radio</code>. If set to <code>select</code>, an HTML
+select element is rendered, otherwise a collection of <code>radio</code>
+elements is used.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>select</li></ul></dd>
     
     
     
@@ -5300,12 +5547,12 @@ within the given specific section.</p>
             
                 <span class="inherited"><a href="LuCI.form.AbstractValue.html#cfgvalue">inherited</a></span>
             
-            cfgvalue<span class="signature">(section_id)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{null}</span>
+            cfgvalue<span class="signature">(section_id)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{*}</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line5125">line 5125</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line1832">line 1832</a>
         </div>
         
     </div>
@@ -5316,8 +5563,11 @@ within the given specific section.</p>
     
     
     <div class="description">
-        <p>Since the section container is not tied to any UCI configuration,
-its <code>cfgvalue()</code> implementation will always return <code>null</code>.</p>
+        <p>Query the underlying configuration value.</p>
+<p>The default implementation of this method returns the cached return
+value of <a href="LuCI.form.AbstractValue.html#load"><code>load()</code></a>. It may be
+overridden by user code to obtain the configuration value in a
+different way.</p>
     </div>
     
 
@@ -5452,11 +5702,11 @@ its <code>cfgvalue()</code> implementation will always return <code>null</code>.
             
             <td class="type">
             
-                        null
+                        *
                         
                     
             </td>
-            <td class="description last"></td>
+            <td class="description last">Returns the configuration value.</td>
         </tr>
     
     </tbody>
@@ -5696,12 +5946,12 @@ argument, this parameter is ignored.</p></td>
             
                 <span class="inherited"><a href="LuCI.form.AbstractValue.html#formvalue">inherited</a></span>
             
-            formvalue<span class="signature">(section_id)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{null}</span>
+            formvalue<span class="signature">(section_id)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{*}</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line5134">line 5134</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line1860">line 1860</a>
         </div>
         
     </div>
@@ -5712,8 +5962,10 @@ argument, this parameter is ignored.</p></td>
     
     
     <div class="description">
-        <p>Since the section container is not tied to any UCI configuration,
-its <code>formvalue()</code> implementation will always return <code>null</code>.</p>
+        <p>Query the current form input value.</p>
+<p>The default implementation of this method returns the current input
+value of the underlying <a href="LuCI.ui.AbstractElement.html"><code>LuCI.ui</code></a> widget.
+It may be overridden by user code to handle input values differently.</p>
     </div>
     
 
@@ -5848,11 +6100,11 @@ its <code>formvalue()</code> implementation will always return <code>null</code>
             
             <td class="type">
             
-                        null
+                        *
                         
                     
             </td>
-            <td class="description last"></td>
+            <td class="description last">Returns the current input value.</td>
         </tr>
     
     </tbody>
@@ -6499,7 +6751,7 @@ returns <code>false</code>.</td>
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line5074">line 5074</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line1786">line 1786</a>
         </div>
         
     </div>
@@ -6682,7 +6934,7 @@ so it may return promises if overridden by user code.</td>
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line5079">line 5079</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line2006">line 2006</a>
         </div>
         
     </div>
@@ -6833,7 +7085,7 @@ validation constraints.</td>
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line5116">line 5116</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line2086">line 2086</a>
         </div>
         
     </div>
@@ -6844,8 +7096,14 @@ validation constraints.</td>
     
     
     <div class="description">
-        <p>Since the section container is not tied to any UCI configuration,
-its <code>remove()</code> implementation is a no-op.</p>
+        <p>Remove the corresponding value from the configuration.</p>
+<p>This function is invoked upon saving the parent form when the option
+element has been hidden due to unsatisfied dependencies or when the
+user cleared the input value and the option is marked optional.</p>
+<p>The default implementation simply removes the associated option from the
+UCI configuration (or the associated JavaScript object property in
+case of <code>JSONMap</code> forms). It may be overridden by user code to
+implement alternative removal logic, e.g. to retain the original value.</p>
     </div>
     
 
@@ -7469,14 +7727,14 @@ was neither a string nor a function.</td>
     <div class="nameContainer inherited">
         <h4 class="name" id="value">
             
-                <span class="inherited"><a href="LuCI.form.SectionValue.html#value">inherited</a></span>
+                <span class="inherited"><a href="LuCI.form.ListValue.html#value">inherited</a></span>
             
-            value<span class="signature">(key, val)</span>
+            value<span class="signature">(key, val, description)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line5100">line 5100</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line4105">line 4105</a>
         </div>
         
     </div>
@@ -7487,8 +7745,10 @@ was neither a string nor a function.</td>
     
     
     <div class="description">
-        <p>Since the section container is not rendering an own widget,
-its <code>value()</code> implementation is a no-op.</p>
+        <p>Add a predefined choice to the form option. By adding one or more
+choices, the plain text input field is turned into a combobox widget
+which prompts the user to select a predefined choice, or to enter a
+custom value.</p>
     </div>
     
 
@@ -7566,6 +7826,34 @@ or a plain text string. If omitted, the <code>key</code> value is used as captio
         </tr>
 	
 	
+	
+        <tr>
+            
+                <td class="name"><code>description</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Node</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The description text of the choice value. May be a DOM node, a document
+fragment or a plain text string. If omitted, the value element is
+implemented as a simple ListValue entry.</p></td>
+        </tr>
+	
+	
 	</tbody>
 </table>
     
@@ -7622,7 +7910,7 @@ or a plain text string. If omitted, the <code>key</code> value is used as captio
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line5108">line 5108</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line2063">line 2063</a>
         </div>
         
     </div>
@@ -7633,8 +7921,16 @@ or a plain text string. If omitted, the <code>key</code> value is used as captio
     
     
     <div class="description">
-        <p>Since the section container is not tied to any UCI configuration,
-its <code>write()</code> implementation is a no-op.</p>
+        <p>Write the current input value into the configuration.</p>
+<p>This function is invoked upon saving the parent form when the option
+element is valid and when its input value has been changed compared to
+the initial value returned by
+<a href="LuCI.form.AbstractValue.html#cfgvalue"><code>cfgvalue()</code></a>.</p>
+<p>The default implementation simply sets the given input value in the
+UCI configuration (or the associated JavaScript object property in
+case of <code>JSONMap</code> forms). It may be overridden by user code to
+implement alternative save logic, e.g. to transform the input value
+before it is written.</p>
     </div>
     
 
