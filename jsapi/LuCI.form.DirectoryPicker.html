@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: ListValue</title>
+    <title>Class: DirectoryPicker</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -3963,7 +3963,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="LuCI.form.ListValue.html">Class: ListValue</h1>
+        <h1 class="page-title" data-filename="LuCI.form.DirectoryPicker.html">Class: DirectoryPicker</h1>
         
 
 
@@ -3974,12 +3974,11 @@
     <h2>
         <span class="ancestors"><a href="LuCI.html">LuCI</a><a href="LuCI.form.html">.form</a>.</span>
     
-    ListValue
+    DirectoryPicker
     </h2>
     
-        <div class="class-description"><p>The <code>ListValue</code> class implements a simple static HTML select element
-allowing the user to choose a single value from a set of predefined choices.
-It builds upon the <a href="LuCI.ui.Select.html"><code>LuCI.ui.Select</code></a> widget.</p></div>
+        <div class="class-description"><p>The <code>DirectoryPicker</code> element wraps a <a href="LuCI.ui.FileUpload.html"><code>LuCI.ui.FileUpload</code></a> widget and
+offers the ability to browse, create, delete and select remote directories.</p></div>
     
 </header>  
 
@@ -3991,14 +3990,14 @@ It builds upon the <a href="LuCI.ui.Select.html"><code>LuCI.ui.Select</code></a>
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="ListValue">
+        <h4 class="name" id="DirectoryPicker">
             
-            new LuCI.form.ListValue<span class="signature">(form, section, option, <span class="optional">title</span>, <span class="optional">description</span>)</span>
+            new LuCI.form.DirectoryPicker<span class="signature">(form, section, option, <span class="optional">title</span>, <span class="optional">description</span>)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line3950">line 3950</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line5076">line 5076</a>
         </div>
         
     </div>
@@ -4060,7 +4059,7 @@ It builds upon the <a href="LuCI.ui.Select.html"><code>LuCI.ui.Select</code></a>
                         
                     
                 
-                <p>The configuration form to which this section is added to. It is automatically passed
+                <p>The configuration form to which this section is added. It is automatically passed
 by <a href="LuCI.form.AbstractSection.html#option"><code>option()</code></a> or
 <a href="LuCI.form.AbstractSection.html#taboption"><code>taboption()</code></a> when adding the
 option to the section.</p></td>
@@ -4091,7 +4090,7 @@ option to the section.</p></td>
                         
                     
                 
-                <p>The configuration section this option is added to. It is automatically passed
+                <p>The configuration section this option is added. It is automatically passed
 by <a href="LuCI.form.AbstractSection.html#option"><code>option()</code></a> or
 <a href="LuCI.form.AbstractSection.html#taboption"><code>taboption()</code></a> when adding the
 option to the section.</p></td>
@@ -4255,7 +4254,7 @@ option to the section.</p></td>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="orientation">orientation<span class="type-signature type string">string</span> </h4>
+        <h4 class="name" id="browser">browser<span class="type-signature type boolean">boolean</span> </h4>
     </div>
     
     
@@ -4263,9 +4262,8 @@ option to the section.</p></td>
 <dd>
     
     <div class="description">
-        <p>Set the orientation of the underlying radio or checkbox elements.</p>
-<p>May be one of <code>horizontal</code> or <code>vertical</code>. Only applies to non-select
-widget types.</p>
+        <p>Render the widget in browser mode initially instead of a button
+to 'Select Directory...'.</p>
     </div>
     
     
@@ -4287,7 +4285,7 @@ widget types.</p>
     
     
     <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy"><li>horizontal</li></ul></dd>
+    <dd class="tag-default"><ul class="dummy"><li>false</li></ul></dd>
     
     
     
@@ -4305,7 +4303,7 @@ widget types.</p>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="size">size<span class="type-signature type number">number</span> </h4>
+        <h4 class="name" id="directory_create">directory_create<span class="type-signature type boolean">boolean</span> </h4>
     </div>
     
     
@@ -4313,7 +4311,12 @@ widget types.</p>
 <dd>
     
     <div class="description">
-        <p>Set the size attribute of the underlying HTML select element.</p>
+        <p>Toggle remote directory create functionality.</p>
+<p>When set to <code>true</code>, the underlying widget provides a button which lets
+the user create directories. Note that this is merely
+a cosmetic feature: remote create permissions are controlled by the
+session ACL rules.</p>
+<p>The default of <code>false</code> means the directory create button is hidden.</p>
     </div>
     
     
@@ -4335,7 +4338,7 @@ widget types.</p>
     
     
     <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy"><li>null</li></ul></dd>
+    <dd class="tag-default"><ul class="dummy"><li>false</li></ul></dd>
     
     
     
@@ -4353,7 +4356,7 @@ widget types.</p>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="widget">widget<span class="type-signature type string">string</span> </h4>
+        <h4 class="name" id="enable_download">enable_download<span class="type-signature type boolean">boolean</span> </h4>
     </div>
     
     
@@ -4361,10 +4364,7 @@ widget types.</p>
 <dd>
     
     <div class="description">
-        <p>Set the type of the underlying form controls.</p>
-<p>May be one of <code>select</code> or <code>radio</code>. If set to <code>select</code>, an HTML
-select element is rendered, otherwise a collection of <code>radio</code>
-elements is used.</p>
+        <p>Toggle download file functionality.</p>
     </div>
     
     
@@ -4386,7 +4386,219 @@ elements is used.</p>
     
     
     <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy"><li>select</li></ul></dd>
+    <dd class="tag-default"><ul class="dummy"><li>false</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="enable_remove">enable_remove<span class="type-signature type boolean">boolean</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Toggle remote file delete functionality.</p>
+<p>When set to <code>true</code>, the underlying widget provides buttons which let
+the user delete files from remote directories. Note that this is merely
+a cosmetic feature: remote delete permissions are controlled by the
+session ACL rules.</p>
+<p>The default is <code>false</code>, means file removal buttons are not displayed.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>false</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="enable_upload">enable_upload<span class="type-signature type boolean">boolean</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Toggle file upload functionality.</p>
+<p>When set to <code>true</code>, the underlying widget provides a button which lets
+the user select and upload local files to the remote system.
+Note that this is merely a cosmetic feature: remote upload access is
+controlled by the session ACL rules.</p>
+<p>The default of <code>false</code> means file upload functionality is disabled.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>false</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="root_directory">root_directory<span class="type-signature type string">string</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Specify the root directory for file browsing.</p>
+<p>This property defines the topmost directory the file browser widget may
+navigate to. The UI will not allow browsing directories outside this
+prefix. Note that this is merely a cosmetic feature: remote file access
+and directory listing permissions are controlled by the session ACL
+rules.</p>
+<p>The default is <code>/tmp</code>.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>/tmp</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="show_hidden">show_hidden<span class="type-signature type boolean">boolean</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Toggle display of hidden files.</p>
+<p>Display hidden files when rendering the remote directory listing.
+Note that this is merely a cosmetic feature: hidden files are always
+included in received remote file listings.</p>
+<p>The default of <code>true</code> means hidden files are displayed.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>true</li></ul></dd>
     
     
     
@@ -7722,15 +7934,17 @@ was neither a string nor a function.</td>
         
             
 <dt>
-    <div class="nameContainer">
+    <div class="nameContainer inherited">
         <h4 class="name" id="value">
             
-            value<span class="signature">(key, val, description)</span>
+                <span class="inherited"><a href="LuCI.form.Value.html#value">inherited</a></span>
+            
+            value<span class="signature">(key, val)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="form.js.html">form.js</a>, <a href="form.js.html#line4155">line 4155</a>
+            <a href="form.js.html">form.js</a>, <a href="form.js.html#line3735">line 3735</a>
         </div>
         
     </div>
@@ -7818,35 +8032,7 @@ custom value.</p>
             <td class="description last">
                 
                 <p>The caption for the choice value. May be a DOM node, a document fragment
-or a plain text string. If omitted, the <code>key</code> value is used as caption.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>description</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Node</span>
-|
-
-<span class="param-type">string</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The description text of the choice value. May be a DOM node, a document
-fragment or a plain text string. If omitted, the value element is
-implemented as a simple ListValue entry.</p></td>
+or a plain text string. If omitted, the <code>key</code> value is used as a caption.</p></td>
         </tr>
 	
 	
